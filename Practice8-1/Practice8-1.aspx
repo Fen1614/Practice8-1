@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:TextBox ID="tb_Msg" runat="server"></asp:TextBox><br />
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="格式錯誤" ValidationExpression="^((\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})|(\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}))$" ControlToValidate="tb_Msg"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="格式錯誤" ValidationExpression="^((\d{4}-\d{2}-\d{2}\s{1}\d{2}:\d{2}:\d{2})|(\d{4}/\d{2}/\d{2}\s{1}\d{2}:\d{2}:\d{2}))$" ControlToValidate="tb_Msg"></asp:RegularExpressionValidator>
         </div>
     </form>
 </body>
